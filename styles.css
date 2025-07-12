@@ -1,0 +1,128 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height:1.5;
+  background: linear-gradient(-45deg, #fefae0, #fceabb, #fae1dd, #ffe5ec);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  scroll-behavior: smooth;
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(120deg, #fdf0d5, #fde4cf);
+  z-index: -1;
+  animation: pulse 10s ease-in-out infinite alternate;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse {
+  from { filter: brightness(100%) saturate(110%); }
+  to { filter: brightness(105%) saturate(120%); }
+}
+
+header {
+  background: #000;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  padding: 120px 20px;
+  color: #fff;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #ffd700;
+  text-shadow: 1px 1px #000;
+}
+
+.btn {
+  background: linear-gradient(to right, #ff3c38, #ff006e);
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(255, 60, 56, 0.4);
+  margin-top: 50px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff006e, #ff3c38);
+}
+
+section {
+  background: white;
+  margin: 40px auto;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+}
+footer{
+  background-color: black;
+  color: #fae1dd;
+  font-weight: bolder;
+}
+.hidden {
+  display: none;
+}
+
+
